@@ -12,7 +12,9 @@ eject: ejects the mentioned user as a impostor/crewmate
 comment: fakes a youtube comment
 meme: posts random memes using pop cat api
 wasted: makes user's avatar WASTED
-howgay: rates how gay the user is]
+howgay: rates how gay the user is
+whoasked: searches for askers if found
+ping: shows the bot's delay response]
 $footer[1;Bot maintained by dodoGames]
 $addTimestamp[1]`}  // returns a list of commands
      
