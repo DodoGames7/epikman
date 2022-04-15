@@ -14,7 +14,7 @@ bot.status({
   time: 12
 })
 
-bot.onInteractionCreate  
+bot.onInteractionCreate()  
 
  bot.onMessage() //Allows to execute Commands
 
