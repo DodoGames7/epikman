@@ -1,7 +1,7 @@
 module.exports ={
 name: "version",
 aliases:["news","updates","ver","changelog"],
-code: `$title[1;Version 1.4.6]
+code: `$title[1;Version 1.4.6 (dev)]
 $description[1; 
 added serverinfo command]
 $color[1;#5F8DCE]
