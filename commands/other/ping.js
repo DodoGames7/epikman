@@ -1,5 +1,6 @@
-module.exports = {
-type: "basicCommand",
-name: "ping",
-code: `Pong! 🏓, \`$pingms\` `
-}
+module.exports ={
+  name:"ping",
+  code: `Pong! 🏓, \`$ping\`ms!
+
+`
+} 
