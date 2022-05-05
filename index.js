@@ -1,27 +1,19 @@
-const aoijs = require('aoi.js')
+const { AoiClient } = require("aoi.js");
 
-
-const bot = new aoijs.Bot({
-   token: process.env.TOKEN,
- //Discord Bot Token, (ofc it's hidden what did you expect)
-   prefix: ";", //Discord Bot Prefix
-   intents: "all"
- })
-
-bot.status({
-  text: "Epok",
-  type: "PLAYING",
-  time: 12
+const bot = new AoiClient({
+    token: process.env.TOKEN,
+    intents: ["Guilds", "GuildMessages", "MessageContent"],
+    prefix: "e;"
 })
 
-bot.onInteractionCreate()  
+bot.status.add({
+    name: "Epok",
+    duration: 12000
+})
 
- bot.onMessage() //Allows to execute Commands
+bot.addEvent("onMessage")
 
- const loader = new aoijs.LoadCommands(bot)
- loader.load(bot.cmd,"./commands/")
+bot.commands.load(`./commands/`)
 
- /*
- bot.cmd is object of Collections where the command data will be stored
- "./commands/" is the path of folder where all the commands' code will be present
- */
+
+bot.start()

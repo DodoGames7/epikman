@@ -1,10 +1,7 @@
-module.exports ={
-name: "version",
-aliases:["news","updates","ver","changelog"],
-code: `$title[1;Version 1.4.5]
-$description[1; 
-finally removed useless commands]
-$color[1;#5F8DCE]
-$addTimestamp[1]
-       
-`} // shows the current version of the aoi.js bot, totally code maintained by me
+module.exports = {
+type: "basicCommand",
+name: "ver",
+code: `$title[1;Version 1.5.5 (Dev)]
+$description[1; rewrited dev bot to use aoi.js v6 dev build]
+$color[1;#5F8DCE]`
+}

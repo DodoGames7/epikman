@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "aoi.js": "^5.1.2",
-    "aoi.js-light": "^1.1.0"
+    "aoi.js": "^6.0.0-dev.95c2da2.1650938854",
+    "discord.js": "^14.0.0-dev.1650931749-df64d3e"
   }
 }
