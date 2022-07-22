@@ -1,22 +1,17 @@
-const aoijs = require('aoi.js')
+const aoijs = require("aoi.js")
 
 
-const bot = new aoijs.Bot({
-   token: process.env.TOKEN,
- //Discord Bot Token, (ofc it's hidden what did you expect)
-   prefix: ";", //Discord Bot Prefix
-   intents: "all"
+ const bot = new aoijs.Bot({
+   token: process.env.TOKEN, //Discord Bot Token
+   prefix: "epik", //Discord Bot Prefix
+   intents: ["GUILDS", "GUILD_MESSAGES"] //Discord Intents 
  })
 
-bot.status({
-  text: "Epok",
-  type: "PLAYING",
-  time: 12
-})
+ 
+require('./handlers/variables')(bot)
+require('./handlers/callbacks')(bot)
+               
 
-bot.onInteractionCreate()  
-
- bot.onMessage() //Allows to execute Commands
 
  const loader = new aoijs.LoadCommands(bot)
  loader.load(bot.cmd,"./commands/")
