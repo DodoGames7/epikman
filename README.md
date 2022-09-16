@@ -1,3 +1,5 @@
+# development pause notice
+epik man development is On hiatus for personal reasons until further notice, for now you can use [Dodo-Bot](https://github.com/DodoGames7/Dodo-Bot) instead 
 # Notice
 this bot hasn't currently finished, also some of commands can be taken from other aoi.js projects, as a result if one was taken then a credit will be given to these bot creators, via a hidden commment which starts with `//` in the bot Code
 
